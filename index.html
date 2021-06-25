@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Project 78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">Next</button>
+        </center>;
+
+        <script>
+     var images = ["https://i.postimg.cc/MKdhy06Z/family.jpg","https://thumbs.dreamstime.com/b/father-portrait-handsome-man-shirt-jeans-sweater-wearing-glasses-cartoon-character-standing-dad-vector-illustration-86364395.jpg", "https://www.clipartkey.com/mpngs/m/268-2683449_12-year-old-clipart.png" , "https://lh3.googleusercontent.com/proxy/7vvWPwnj1wEyV12Oj4lYZhw9azeec24M9bg1Rnr0UzxI_kDVi5ipC9K4vfQqqK5UWzlD8PG46tZ3NGIf7m6wo9YEL67z7wV1qmGs88F1JEQD", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtPQ3ihBC2e19BuUWWj_8L21jashPO5fky2w&usqp=CAU"];
+            var names = ["Family Book","Nehal Chheda", "Kiaan Chheda", "Rianna Chheda", "Swati Chheda"];
+            var i = 0;
+            function update()
+            {
+                i++;
+                var numbers_of_family_member_in_array = 4
+                if(i > numbers_of_family_member_in_array )
+                {
+                    i = 0;
+                }
+                var updatedImage = images[i];
+                var updatedName  = names[i];
+                document.getElementById("family_member_image").src = updatedImage;
+                document.getElementById("family_member_name").innerHTML = updatedName;
+            }
+
+            </script>
+            </body>
+            </html>
